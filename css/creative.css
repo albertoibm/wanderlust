@@ -79,7 +79,7 @@ body {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: white;
+  background-color: #EDEEF0;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -90,7 +90,7 @@ body {
     color: #AE0B32;
 	min-width: 300px;
 	min-height: 50px;
-	background-image: url(../img/logotipo_wanderlust-white-300.png);
+	background-image: url(../img/logotipo_wanderlust-gray-300.png);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #AE0B32; }
@@ -120,6 +120,7 @@ body {
       border-color: rgba(255, 255, 255, 0.3);
       background-color: transparent; }
       #mainNav .navbar-brand {
+	background-image: url(../img/logotipo_wanderlust-white-300.png);
         color: rgba(255, 255, 255, 0.7); }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: white; }
