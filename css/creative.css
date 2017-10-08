@@ -88,9 +88,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #AE0B32;
-	min-width: 300px;
+	min-width: 250px;
 	min-height: 50px;
 	background-image: url(../img/logotipo_wanderlust-gray-300.png);
+	background-repeat:no-repeat;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #AE0B32; }
