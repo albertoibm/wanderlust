@@ -25,6 +25,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/utils.css" rel="stylesheet">
+    <script src="js/location.js"></script>
 
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70923538-2"></script>
@@ -83,6 +85,7 @@
 	  <p>Tzotzil for Hello! in case you were wondering</p>
           <hr>
           <p>Wanderlust Hostel is located in the colonial town of San Crist&oacute;bal de las Casas, in the state of Chiapas, Mexico.</p>
+	  <p>Come and follow your Wanderlust!</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="en/#about">Book a bed now</a>
         </div>
       </div>
@@ -105,7 +108,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Location and how to get here</h2>
+            <h2 class="section-heading">How to get here?</h2>
             <hr class="primary">
           </div>
         </div>
@@ -113,32 +116,43 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+            <div onclick="toggleThis('airport1')" class="service-box">
+              <i class="fa fa-4x fa-plane text-primary sr-icons"></i>
               <h3>From the airport</h3>
-              <p class="text-muted">Take a taxi, it'.</p>
+              <p id="airport1" class="text-muted def-hidden">If you decide to rent a car, take Federal Highway 157 towards Tuxtla Guti&eacute;rrez and follow it until you find Federal Highway 160. Take that one towards Chiapa de Corzo and 10km before gettting there you'll have to take Federal Highway 190 for the last 48km to Sancris.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>From the airport 2</h3>
-              <p class="text-muted">Take bus number</p>
+            <div onclick="toggleThis('airport2')" class="service-box">
+              <i class="fa fa-4x fa-taxi text-primary sr-icons"></i>
+              <h3>From the airport</h3>
+              <p id="airport2" class="text-muted def-hidden">You can take a cami&oacute;n to Crist&oacute;bal Col&oacute;n-ADO Station in San Crist&oacute;bal de las Casas or hire a cab, if you come in a group it might be worth it.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+            <div onclick="toggleThis('bus')" class="service-box">
+              <i class="fa fa-4x fa-bus text-primary sr-icons"></i>
               <h3>From the bus station</h3>
-              <p class="text-muted">Walk</p>
+              <p id="bus" class="text-muted def-hidden">From the station Crist&oacute;bal Col&oacute;n-ADO , follow Insurgentes Street towards the city center until you get to Francisco I. Madero street. </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+            <div onclick="toggleThis('city')" class="service-box">
+              <i class="fa fa-4x fa-rocket text-primary sr-icons"></i>
               <h3>From the city center</h3>
-              <p class="text-muted">Walk.</p>
+              <p id="city" class="text-muted def-hidden">Take Francisco I. Madero and look for number 47B on your right side, it's three blocks away!</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <hr class="primary">
+	    <a href="https://www.google.de/maps/place/Francisco+I.+Madero+47,+Barrio+de+Guadalupe,+29230+San+Cristóbal+de+las+Casas,+Chis.,+Mexico/@16.7366794,-92.6372924,17z">
+	       <img src="img/map.png" style="max-width:100%;width:auto;"/>
+	    </a>
+            <hr class="primary">
           </div>
         </div>
       </div>
