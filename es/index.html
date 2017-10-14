@@ -25,6 +25,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/utils.css" rel="stylesheet">
+    <script src="js/location.js"></script>
+
 
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70923538-2"></script>
@@ -101,7 +104,6 @@
         </div>
       </div>
     </section>
-
     <section id="services">
       <div class="container">
         <div class="row">
@@ -114,36 +116,49 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+            <div onclick="toggleThis('airport1')" class="service-box">
+              <i class="fa fa-4x fa-plane text-primary sr-icons"></i>
               <h3>Desde el aeropuerto</h3>
-              <p class="text-muted">a taxi, it'.</p>
+              <p id="airport1" class="text-muted def-hidden">Si decides rentar un coche, toma la Carretera Federal 157 hacia Tuxtla y s&iacute;guela hasta llegar a la Carretera Federal 160. T&oacute;mala con direcci&oacute;n a Chiapa de Corzo y 10km antes de llegar toma la carretera 190 hasta Sancris, son 48km m&aacute;s.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>From the airport 2</h3>
-              <p class="text-muted">Take bus number</p>
+            <div onclick="toggleThis('airport2')" class="service-box">
+              <i class="fa fa-4x fa-taxi text-primary sr-icons"></i>
+              <h3>Desde el aeropuerto</h3>
+              <p id="airport2" class="text-muted def-hidden">Desde el aeropuerto de Tuxtla Guti&eacute;rrez puedes tomar un autob&uacute;s a la estaci&oacute;n Crist&oacute;bal Col&oacute;n-ADO es San Crist&oacute;bal de las Casas o tomar un taxi, si vienes en grupo puede valer la pena.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+            <div onclick="toggleThis('bus')" class="service-box">
+              <i class="fa fa-4x fa-bus text-primary sr-icons"></i>
               <h3>Desde la estaci&oacute;n de autobuses</h3>
-              <p class="text-muted">Walk</p>
+	      <p id="bus" class="text-muted def-hidden">Desde la estación Crist&oacute;bal Col&oacute;n-ADO , camina por Insurgentes hacia el centro de la ciudad hasta llegar a la calle Francisco I. Madero. </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+            <div onclick="toggleThis('city')" class="service-box">
+              <i class="fa fa-4x fa-rocket text-primary sr-icons"></i>
               <h3>Desde el centro de la ciudad</h3>
-              <p class="text-muted">Walk.</p>
+	      <p id="city" class="text-muted def-hidden">Toma la calle Francisco I. Madero y busca el n&uacute;mero 47B de tu lado derecho, est&aacute; a tres cuadras!</p>
             </div>
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <hr class="primary">
+	    <a href="https://www.google.de/maps/place/Francisco+I.+Madero+47,+Barrio+de+Guadalupe,+29230+San+Cristóbal+de+las+Casas,+Chis.,+Mexico/@16
+.7366794,-92.6372924,17z">
+	       <img src="img/map.png" style="max-width:100%;width:auto;"/>
+	    </a>
+            <hr class="primary">
+          </div>
+        </div>
+      </div>
     </section>
+
 
     <section class="p-0" id="portfolio">
       <div class="container-fluid">
