@@ -25,6 +25,24 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/utils.css" rel="stylesheet">
+    <script src="js/location.js"></script>
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70923538-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-70923538-2');
+	</script>
+  <!-- MyAllocator -->
+  <script type="text/javascript">
+    var bookNowWidth = 610;
+    function bookNowApp(e){var t=document.createElement("img");t.style.cursor="pointer";t.src="https://myallocator.com/images/booknow/close_button.png";t.style.zIndex=52;t.style.position="absolute";t.style.left="50%";document.getElementsByTagName("body")[0].appendChild(t);var n=document.createElement("div");n.style.position="fixed";n.style.top="0px";n.style.left="0px";n.style.overflow="hidden";n.style.display="none";n.style.width="100%";n.style.height="100%";n.style.opacity=.7;n.style.MozOpacity=.7;n.style.filter="alpha(opacity=70)";n.style.zIndex=50;n.style.display="block";n.style.backgroundColor="#000000";document.getElementsByTagName("body")[0].appendChild(n);var r=document.createElement("iframe");r.style.width=bookNowWidth+"px";r.style.height="100%";r.style.border="none";r.a="true";r.style.position="absolute";r.style.left="50%";r.style.top="90px";r.style.marginLeft=-(bookNowWidth/2)+"px";r.allowTransparency="true";r.frameBorder = "0";r.style.zIndex=51;r.src="https://myallocator.com/en/booknow/"+e;document.getElementsByTagName("body")[0].appendChild(r);n.addEventListener?n.addEventListener("click",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)},!1):n.attachEvent("onclick",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)});t.addEventListener?t.addEventListener("click",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)},!1):t.attachEvent("onclick",function(){t.parentNode.removeChild(t);n.parentNode.removeChild(n);r.parentNode.removeChild(r)});t.style.marginLeft=bookNowWidth/2-35+"px";t.style.top="58px";window.scroll(0,0)}
+  </script>
+
 
   </head>
 
@@ -41,6 +59,9 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="en/#about">Book a bed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="en/#rooms">The Hostel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="en/#services">Location</a>
@@ -72,6 +93,7 @@
 	  <p>Tzotzil for Hello! in case you were wondering</p>
           <hr>
           <p>Wanderlust Hostel is located in the colonial town of San Crist&oacute;bal de las Casas, in the state of Chiapas, Mexico.</p>
+	  <p>Come and follow your Wanderlust!</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="en/#about">Book a bed now</a>
         </div>
       </div>
@@ -81,20 +103,58 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
+            <h2 class="section-heading text-white">Come visit us! You will feel at home</h2>
             <hr class="light">
-            <p class="text-faded">We are a small hostel in the heart of Sancris</p>
-            <a class="btn btn-default btn-xl js-scroll-trigger" href="files.zip">Book a bed</a>
+            <a class="btn btn-default btn-xl js-scroll-trigger"  onclick="bookNowApp('hE52fn3HFUp9KAp1x0a5og')" style="cursor:pointer">Book a bed</a>
           </div>
         </div>
       </div>
     </section>
-
+    <section class="p-0" id="rooms">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/rooms/fullsize/1.jpg">
+              <img class="img-fluid" src="img/rooms/thumbnails/1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/rooms/fullsize/2.jpg">
+              <img class="img-fluid" src="img/rooms/thumbnails/2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/rooms/fullsize/3.jpg">
+              <img class="img-fluid" src="img/rooms/thumbnails/3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-5 col-sm-6">
+            <a class="portfolio-box" href="img/rooms/fullsize/4.jpg">
+              <img class="img-fluid" src="img/rooms/thumbnails/4.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="img/rooms/fullsize/5.jpg">
+              <img class="img-fluid" src="img/rooms/thumbnails/5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/rooms/fullsize/6.jpg">
+              <img class="img-fluid" src="img/rooms/thumbnails/6.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="call-to-action bg-dark gallery-floor">
+      <div class="container text-center">
+      </div>
+    </div>
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Location and how to get here</h2>
+            <h2 class="section-heading">How to get here?</h2>
             <hr class="primary">
           </div>
         </div>
@@ -102,38 +162,57 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+            <div onclick="toggleThis('airport1')" class="service-box">
+              <i class="fa fa-4x fa-plane text-primary sr-icons"></i>
               <h3>From the airport</h3>
-              <p class="text-muted">Take a taxi, it'.</p>
+              <p id="airport1" class="text-muted def-hidden">If you decide to rent a car, take Federal Highway 157 towards Tuxtla Guti&eacute;rrez and follow it until you find Federal Highway 160. Take that one towards Chiapa de Corzo and 10km before gettting there you'll have to take Federal Highway 190 for the last 48km to Sancris.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>From the airport 2</h3>
-              <p class="text-muted">Take bus number</p>
+            <div onclick="toggleThis('airport2')" class="service-box">
+              <i class="fa fa-4x fa-taxi text-primary sr-icons"></i>
+              <h3>From the airport</h3>
+              <p id="airport2" class="text-muted def-hidden">You can take a cami&oacute;n to Crist&oacute;bal Col&oacute;n-ADO Station in San Crist&oacute;bal de las Casas or hire a cab, if you come in a group it might be worth it.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+            <div onclick="toggleThis('bus')" class="service-box">
+              <i class="fa fa-4x fa-bus text-primary sr-icons"></i>
               <h3>From the bus station</h3>
-              <p class="text-muted">Walk</p>
+              <p id="bus" class="text-muted def-hidden">From the station Crist&oacute;bal Col&oacute;n-ADO , follow Insurgentes Street towards the city center until you get to Francisco I. Madero street. </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+            <div onclick="toggleThis('city')" class="service-box">
+              <i class="fa fa-4x fa-rocket text-primary sr-icons"></i>
               <h3>From the city center</h3>
-              <p class="text-muted">Walk.</p>
+              <p id="city" class="text-muted def-hidden">Take Francisco I. Madero and look for number 47B on your right side, it's three blocks away!</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <hr class="primary">
+	    <a href="https://www.google.de/maps/place/Francisco+I.+Madero+47,+Barrio+de+Guadalupe,+29230+San+Cristóbal+de+las+Casas,+Chis.,+Mexico/@16.7366794,-92.6372924,17z">
+	       <img src="img/map.png" style="max-width:100%;width:auto;"/>
+	    </a>
+            <hr class="primary">
           </div>
         </div>
       </div>
     </section>
 
     <section class="p-0" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">What to do?</h2>
+            <hr class="primary">
+          </div>
+        </div>
+      </div>
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
@@ -145,7 +224,7 @@
                     Culture
                   </div>
                   <div class="project-name">
-                    Cathedral 
+                    Old City
                   </div>
                 </div>
               </div>
@@ -160,7 +239,7 @@
                     Culture
                   </div>
                   <div class="project-name">
-                    Museum of chocolate
+                    Ruins
                   </div>
                 </div>
               </div>
@@ -217,10 +296,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Culture
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Chiapa de Corzo
                   </div>
                 </div>
               </div>
@@ -230,12 +309,12 @@
       </div>
     </section>
 
-    <div class="call-to-action bg-dark">
+    <!--div class="call-to-action bg-dark">
       <div class="container text-center">
         <h2>Do something</h2>
         <a class="btn btn-default btn-xl sr-button" href="">Wawawa!</a>
       </div>
-    </div>
+    </div-->
 
     <section id="contact">
       <div class="container">
@@ -249,7 +328,8 @@
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>+52 (967) 631 4341</p>
+	    <p>+52 1 55 1843 2903</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x sr-contact"></i>
