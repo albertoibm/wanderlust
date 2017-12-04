@@ -31,7 +31,7 @@
   </body>
 
 	<script>
-
+setTimeout(function(){
 var userLang = navigator.language || navigator.userLanguage; 
 
 if (userLang.includes("en")){
@@ -39,6 +39,7 @@ if (userLang.includes("en")){
 }else{
 	window.location = "../es";
 }
+}, 2); //2sec
 
 	</script>
 
